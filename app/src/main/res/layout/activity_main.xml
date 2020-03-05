@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mr. Potato Head!"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="20dp"
+        android:textSize="23sp"
+        android:textColor="#000000"/>
+
+    <ImageView
+        android:id="@+id/im1"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/body"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/im2"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/arms"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/im3"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/ears"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/im4"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/eyebrows"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/im5"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/eyes"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/im6"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/glasses"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/im7"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/hat"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/im8"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/mouth"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        />
+
+
+    <ImageView
+        android:id="@+id/im9"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/mustache"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/im10"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/nose"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/im11"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/shoes"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="choose and click:"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="20dp"
+        android:textSize="23sp"
+        android:textColor="#000000"
+        android:layout_below="@id/im1"/>
+
+    <RadioGroup
+        android:id="@+id/rgp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/im1"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="70dp"
+        >
+
+        <CheckBox
+            android:id="@+id/rbtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arms"
+            android:textSize="16dp"
+
+
+            />
+        <CheckBox
+            android:id="@+id/rbtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ears"
+            android:textSize="16dp"
+            />
+        <CheckBox
+            android:id="@+id/rbtn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eyebrows"
+            android:textSize="16dp"
+            />
+        <CheckBox
+            android:id="@+id/rbtn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eyes"
+            android:textSize="16dp"
+            />
+        <CheckBox
+            android:id="@+id/rbtn5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Glasses"
+            android:textSize="16dp"
+            />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rgp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/im1"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="250dp"
+        >
+        <CheckBox
+            android:id="@+id/rbtn6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hat"
+            android:textSize="16dp"
+            />
+        <CheckBox
+            android:id="@+id/rbtn7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mouth"
+            android:textSize="16dp"
+            />
+        <CheckBox
+            android:id="@+id/rbtn8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mustache"
+            android:textSize="16dp"
+            />
+        <CheckBox
+            android:id="@+id/rbtn9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nose"
+            android:textSize="16dp"
+            />
+        <CheckBox
+            android:id="@+id/rbtn10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shoes"
+            android:textSize="16dp"
+            />
+    </RadioGroup>
+
+</RelativeLayout>
